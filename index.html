@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Aura Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <div class="loader-mark">
+      <svg class="loader-ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="loader-ring-track" cx="60" cy="60" r="54"></circle>
+        <circle class="loader-ring-progress" id="loader-ring-progress" cx="60" cy="60" r="54"></circle>
+      </svg>
+      <img src="assets/eagle/logo-mark.jpeg" alt="Vision Aura Agency" class="loader-logo">
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo">
+        <img src="assets/eagle/logo.jpeg" alt="Vision Aura Agency logo">
+        <span class="logo-text">VISION AURA AGENCY </span>
+      </a>
+    </div>
+
+    <nav class="navbar-right" aria-label="Main navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="is-current">HOME</a></li>
+        <li><a href="websites.html">WEBSITES</a></li>
+        <li><a href="automation.html">AUTOMATION</a></li>
+        <li><a href="editing.html">EDITING</a></li>
+        <li><a href="index.html#agency">AGENCY  </a></li>
+        <li><a href="index.html#footer-contact">CONTACT</a></li>
+      </ul>
+
+      <a href="#" id="nav-book-call" class="btn btn-primary">BOOK A CALL</a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <span class="label">CREATIVE AGENCY</span>
+        <h1 class="hero-headline">
+          WE BUILD<br>
+          <span class="hero-headline-accent">VISUAL</span><br>
+          EXPERIENCES.<span class="hero-headline-dot" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-subtext">
+          Websites that convert.<br>
+          Designs that connect.<br>
+          Edits that tell your story.
+        </p>
+        <div class="hero-buttons">
+          <a href="#best-work" id="hero-work" class="btn btn-primary">VIEW OUR WORK</a>
+          <a href="#hero-booking-card" id="hero-book-call" class="btn btn-secondary">BOOK A CALL</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-eagle-visual">
+          <img src="assets/eagle/hero-eagle.png" alt="Vision Aura eagle visual" class="hero-eagle-img">
+        </div>
+
+        <div class="booking-card" id="hero-booking-card">
+          <h3 class="booking-card-title">BOOK A CALL</h3>
+          <p class="booking-card-subtitle">Let's discuss your project.</p>
+
+          <form id="booking-form" class="booking-form">
+            <div class="form-group">
+              <label for="booking-name">Name</label>
+              <input type="text" id="booking-name" name="name" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="booking-email">Email</label>
+              <input type="email" id="booking-email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="booking-need">What do you need?</label>
+              <textarea id="booking-need" name="need" placeholder="What do you need?"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-date">Select Date</label>
+                <input type="date" id="booking-date" name="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-time">Select Time</label>
+                <input type="time" id="booking-time" name="time" required>
+              </div>
+            </div>
+
+            <button type="submit" id="booking-confirm" class="btn btn-primary btn-full">CONFIRM BOOKING</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BEST WORK ===================== -->
+    <section class="best-work" id="best-work">
+
+      <div class="section-heading">
+        <span class="label">BEST WORK</span>
+        <h2>WHAT WE<br>DO BEST</h2>
+      </div>
+
+      <div class="best-work-grid">
+
+        <!-- WEBSITE PROJECT -->
+        <article class="best-work-card project-card" data-category="website">
+          <div class="project-image">
+            <img src="assets/projects/genz-vastra.png" alt="The Gen'Z Vastra e-commerce website" onerror="this.style.display='none'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">THE GEN'Z VASTRA</h3>
+            <p class="project-type">E-COMMERCE WEBSITE</p>
+            <a href="https://genz-vastra.onrender.com/" class="project-link" target="_blank" rel="noopener noreferrer">VIEW PROJECT ↗</a>
+          </div>
+        </article>
+
+        <!-- AUTOMATION PROJECT -->
+        <article class="best-work-card project-card" data-category="automation">
+          <div class="project-image">
+            <img src="assets/projects/ignite.jpg" alt="Ignite Campaign brand campaign" onerror="this.style.display='none'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">AUTOMATION</h3>
+            <p class="project-type">PROJECT WILL UPLOADED SOON </p>
+            <a href="#" class="project-link">VIEW PROJECT ↗</a>
+          </div>
+        </article>
+
+        <!-- EDITING PROJECT -->
+        <article class="best-work-card project-card" data-category="editing">
+          <div class="project-image">
+            <img src="assets/projects/TYPOGRAPHY.jpg" alt="Typography design" onerror="this.style.display='none'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">TYPOGRAPHY</h3>
+            <p class="project-type">DESIGN</p>
+            <a href="https://www.instagram.com/reel/DWEgk3bDsLH/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" class="project-link" target="_blank" rel="noopener noreferrer">VIEW PROJECT ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== PEOPLE BEHIND VISION AURA ===================== -->
+    <section class="people" id="people">
+      <div class="section-heading">
+        <h2>THE PEOPLE BEHIND VISION AURA</h2>
+      </div>
+
+      <div class="people-grid">
+
+        <article class="person-card">
+          <div class="person-image">
+            <img src="assets/team/kush.jpg" alt="Kush">
+          </div>
+          <h3 class="person-name">KUSH</h3>
+          <p class="person-role">CREATIVE / FOUNDER</p>
+          <a href="#" class="person-link">VIEW PROFILE ↗</a>
+        </article>
+
+        <article class="person-card">
+          <div class="person-image">
+            <img src="assets/team/Sonu.jpg" alt="Sonu">
+          </div>
+          <h3 class="person-name">SONU</h3>
+          <p class="person-role">DEVELOPMENT</p>
+          <a href="#" class="person-link">VIEW PROFILE ↗</a>
+        </article>
+
+        <article class="person-card">
+          <div class="person-image">
+            <img src="assets/team/sujal.jpg" alt="Sujal">
+          </div>
+          <h3 class="person-name">SUJAL</h3>
+          <p class="person-role">DESIGN</p>
+          <a href="#" class="person-link">VIEW PROFILE ↗</a>
+        </article>
+
+        <article class="person-card">
+          <div class="person-image">
+            <img src="assets/team/jatin.jpg" alt="Jatin">
+          </div>
+          <h3 class="person-name">JATIN</h3>
+          <p class="person-role">EDITING</p>
+          <a href="#" class="person-link">VIEW PROFILE ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CLIENT WORDS ===================== -->
+    <section class="client-words" id="client-words">
+      <div class="section-heading">
+        <h2>CLIENT WORDS</h2>
+      </div>
+
+      <div class="testimonial-grid">
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-quote">Vision Aura Agency understood our creative style really well. The website feels modern, unique, and much more professional than what we had before.</p>
+          <cite class="testimonial-client">Y2K-STUDIO</cite>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-quote">The website gave our brand a completely different online presence. The product presentation feels clean, modern, and much easier for customers to explore.</p>
+          <cite class="testimonial-client">The Gen’Z Vastra</cite>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-quote">The website makes it much easier for students and parents to understand our courses and get the information they need. Simple, professional, and easy to use.</p>
+          <cite class="testimonial-client">Sai classes</cite>
+        </blockquote>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== AGENCY / ABOUT ===================== -->
+    <section class="studio" id="studio">
+      <div class="studio-content">
+        <h2>ABOUT VISION AURA</h2>
+        <p>
+          Vision Aura Agency is a creative agency
+          focused on three disciplines:
+        </p>
+        <ul class="studio-disciplines">
+          <li>WEBSITES</li>
+          <li>AUTOMATION</li>
+          <li>EDITING</li>
+        </ul>
+        <p class="studio-tagline">
+          Three disciplines.<br>
+          One standard.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="final-cta" id="final-cta">
+      <h2>HAVE A PROJECT<br>IN MIND?</h2>
+      <a href="#" id="final-cta-book-call" class="btn btn-primary">BOOK A CALL ↗</a>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer-contact">
+    <div class="footer-brand">
+      <span class="footer-logo">VISION AURA AGENCY </span>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>SITE</h4>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#agency">AGENCY  </a></li>
+          <li><a href="#footer-contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="websites.html">WEBSITES</a></li>
+          <li><a href="automation.html">AUTOMATION</a></li>
+          <li><a href="editing.html">EDITING</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>CONNECT</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/visionaura_agency?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" id="footer-instagram">Instagram</a></li>
+          <li><a href="https://wa.me/9136245197" id="footer-whatsapp">WhatsApp</a></li>
+          <li><a href="mailto:visionauraagency.in@gmail.com" id="footer-email">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vision Aura Agency </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
